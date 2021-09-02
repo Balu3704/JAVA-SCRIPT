@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="form.js"></script>
+        <link href="form.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-5">
+                    <h1>Employee Form</h1>
+                </div>
+
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Developer Funnel Employee
+                </div>
+               
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="orderid">OrderID</label>
+                            <input class="form-control" placeholder="Fname" value="8378DJEDU8388D" name="fname" id="orderid" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="Fname">Fname</label>
+                            <input class="form-control" placeholder="Fname" value="john" name="fname" id="Fname" required onblur="nameToUpper()"/>
+                       </div>
+                        <div class="form-group">
+                            <label for="Lname">Lname</label>
+                            <input class="form-control" placeholder="Lname" value="batiti" name="Lname" id="Lname"/>
+                        </div>
+
+                        <!--search-->
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="Email">Email</label>
+                                <input class="form-control" placeholder="Email" value="example@example.com" name="email" id="Email" type="email" required/>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="password">password</label>
+                                <input class="form-control" placeholder="password" value="password" name="password" id="password" type="password" minlength="5" required
+                                onInput="changePasswor()"/>
+                                <p id="pout"></p>
+                                <div id="ppout"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exp">Experience</label>
+                            <select class="form-control" id="exp" onChange="getExp()" >
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                        <input type="submit" class="btn btn-success"/>
+                     </form>
+                
+                </div>
+            </div>
+                
+        </div>
+        <script>
+            window.onload=fillId()
+        </script>
+
+    </body>
+</html>
+<!--
+          <input type="text"/>
+                        <input type="date"/>
+                        <input type="file"/>
+                        <input type="hidden"/>
+                        <input type="color"/>
+                        <input type="password"/>
+                        <input type="email"/>
+                        <input type="search"/>
+                        <input type="image"/>
+
+                        <input type="radio" name="gender"/>Female
+                        <input type="radio"  name="gender"/>Male
+
+                        <input type="checkbox"/>Delhi
+                        <input type="checkbox"/>Mumbai
+                        <input type="checkbox"/>pune
+
+                        <input type="button" value="click"/>
+                        <input type="button" value="submit"/>
+                        <input type="button" value="Reset"/>
+-->
